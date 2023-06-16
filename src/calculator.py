@@ -1,19 +1,26 @@
 #!/usr/bin/env python3
 # This is a simple calculator for test purposes to train CI/CD/CT issues with GIT, Docker and Jenkins
 
-# calculator.py
 def add(a, b):
-    checkInputs(a, b)
+    check_inputs(a, b)
     return a + b
+
+
 def subtract(a, b):
-    checkInputs(a, b)
+    check_inputs(a, b)
     return a - b
+
+
 def multiply(a, b):
-    checkInputs(a, b)
+    check_inputs(a, b)
     return a * b
+
+
 def divide(a, b):
-    checkInputs(a, b)
+    check_inputs(a, b)
     return a / b
-def checkInputs(a, b):
+
+
+def check_inputs(a, b):
     if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
-        raise TypeError("Inputs must be either int or float!")
+        raise TypeError("Inputs should be int or float!")
