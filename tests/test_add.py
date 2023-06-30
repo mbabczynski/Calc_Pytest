@@ -1,5 +1,5 @@
-from src.calculator import add
 import pytest
+from src.calculator import add
 
 
 def test_add():
